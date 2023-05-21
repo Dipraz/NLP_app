@@ -1,5 +1,5 @@
 # NLP_app
-The NLP App provides a user-friendly interface that makes it easy to perform various NLP tasks. 
+This NLP App provides a user-friendly interface that makes it easy to perform various NLP tasks. 
 These tasks include:
 
 Text tokenization: This task breaks down text into smaller units, such as words and phrases.
