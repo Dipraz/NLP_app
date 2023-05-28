@@ -8,11 +8,7 @@ from transformers import pipeline
 from collections import Counter
 import pandas as pd
 import nltk
-
-
-# Download the required corpus
 nltk.download('averaged_perceptron_tagger')
-
 
 def get_sentiment_distribution(text):
     """Get the distribution of sentiment in a text."""
