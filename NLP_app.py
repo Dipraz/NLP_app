@@ -7,6 +7,10 @@ from sumy.summarizers.lex_rank import LexRankSummarizer
 from transformers import pipeline
 from collections import Counter
 import pandas as pd
+import nltk
+nltk.download('punkt')
+
+
 
 def get_sentiment_distribution(text):
     """Get the distribution of sentiment in a text."""
