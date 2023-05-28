@@ -8,6 +8,8 @@ from transformers import pipeline
 from collections import Counter
 import pandas as pd
 import nltk
+
+
 # Download the required corpus
 nltk.download('averaged_perceptron_tagger')
 
@@ -48,6 +50,7 @@ def sumy_summarizer(docx):
     return result
 
 def text_analyzer(my_text):
+    nlp = spacy.load('en_core_web_sm', disable=["parser", "ner"])
     nlp = spacy.load('en_core_web_sm')
     docx = nlp(my_text)
     tokens = [token.text for token in docx]
@@ -56,6 +59,7 @@ def text_analyzer(my_text):
 
 
 def entity_analyzer(my_text):
+    nlp = spacy.load('en_core_web_sm', disable=["parser", "ner"])
     nlp = spacy.load('en_core_web_sm')
     docx = nlp(my_text)
     tokens = [token.text for token in docx]
