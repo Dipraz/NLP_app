@@ -8,7 +8,6 @@ from transformers import pipeline
 from collections import Counter
 import pandas as pd
 import nltk
-nltk.download('punkt')
 
 
 
